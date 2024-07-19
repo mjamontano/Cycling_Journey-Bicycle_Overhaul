@@ -1,0 +1,76 @@
+<!-- Author: Michael John Montano -->
+<!-- 1st Sprint Update: N/A-->
+<!-- 2nd Sprint Update: N/A-->
+<!-- 3rd Sprint Update: N/A-->
+<!-- 4th Sprint Update: N/A-->
+<!-- 5th Sprint Update: N/A-->
+<!-- 6th Sprint Update: N/A-->
+<!-- 7th Sprint Update: N/A-->
+<!-- 8th Sprint Update: 07/19/2024 (Deadline: 07/21/2024)-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle Overhaul</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="symbol.png" type="image/x-icon">
+    <link rel="shortcut icon" href="symbol.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles_gallery.css"> <!-- Link your CSS file -->
+</head>
+<body>
+<div class="center-container">
+  <a href="https://mjamontano.github.io/Cycling_Journey/" class="home-button">Go back to "Cycling Journey"</a>
+</div>
+<h1></h1>
+<header>
+  <div class="banner">
+    Bicycle Overhaul
+  </div>
+  <div class="content">
+    <h1>Two Wheels, One Soul</h1>
+    <p>Freedom on every pedal stroke</p>
+  </div>
+</header>
+<h1></h1>
+<div class="logo">
+  1st: June 19, 2024 (KJC Bike Shop)
+</div>
+<div class="full-img" id="fullImgBox">
+    <img src="20240124_102524.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="gallery">
+  <img src="FB_IMG_1718974125728.jpg" onclick="openFullImg(this.src)" alt="P1">
+  <img src="20240619_116161.jpeg" onclick="openFullImg(this.src)" alt="P2">
+  <img src="FB_IMG_1718974132399.jpg" onclick="openFullImg(this.src)" alt="P3">
+  <img src="FB_IMG_1718974102994.jpg" onclick="openFullImg(this.src)" alt="P4">
+</div>
+<div class="gallery">
+  <img src="FB_IMG_1718974082393.jpg" onclick="openFullImg(this.src)" alt="P5">
+  <img src="FB_IMG_1718974094330.jpg" onclick="openFullImg(this.src)" alt="P6">
+  <img src="FB_IMG_1718974097961.jpg" onclick="openFullImg(this.src)" alt="P7">
+  <img src="FB_IMG_1718974107061.jpg" onclick="openFullImg(this.src)" alt="P8">
+  <img src="FB_IMG_1718974113372.jpg" onclick="openFullImg(this.src)" alt="P9">
+  <img src="FB_IMG_1718974117443.jpg" onclick="openFullImg(this.src)" alt="P10">
+  <img src="FB_IMG_1718974121994.jpg" onclick="openFullImg(this.src)" alt="P11">
+  <img src="FB_IMG_1718974073665.jpg" onclick="openFullImg(this.src)" alt="P12">
+  <img src="FB_IMG_1718974078064.jpg" onclick="openFullImg(this.src)" alt="P13">
+  </div>
+ 
+<script>
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+  
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg(){
+    fullImgBox.style.display = "none";
+  }
+</script>
+</body>
+</html>
